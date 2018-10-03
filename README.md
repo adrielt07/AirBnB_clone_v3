@@ -151,16 +151,17 @@ Implement RESTful API that sends GET, POST, PUT and DELETE method requests which
 #### Usage
 
 For Web API: (May sometimes return Internal Error, please refresh)
+
 http://35.227.25.29/api/v1/status - returns {"status":"OK"} - which means API Status is working. 
 
 Replace 'status' with other endpoints
 For example, 
+
 http://35.227.25.29/api/v1/states/ to get all states
 
 http://35.227.25.29/api/v1/states/9799648d-88dc-4e63-b858-32e6531bec5c/cities to get the cities in California
 
-http://35.227.25.29/api/v1/cities/05b0b99c-f10e-4e3a-88d1-b3187d6998ee/places to get all places available for rent tied to San Francisco California
-
+http://35.227.25.29/api/v1/cities/05b0b99c-f10e-4e3a-88d1-b3187d6998ee/places to get all places available for rent in San Francisco 
 
 
 For local testing:
