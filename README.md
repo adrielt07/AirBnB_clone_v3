@@ -18,9 +18,6 @@ By default, all new class instances will have the following attributes:
    - created_at - time this new object was first created
    - updated_at - time this new object was last modified
 
-Note:
-*italics* - SQL Database only
-
 Class name | Attributes | Description
 -----------|-----------|------------|
 State | name | string name of the State
@@ -153,6 +150,20 @@ Implement RESTful API that sends GET, POST, PUT and DELETE method requests which
 
 #### Usage
 
+For Web API: (May sometimes return Internal Error, please refresh)
+http://35.227.25.29/api/v1/status - returns {"status":"OK"} - which means API Status is working. 
+
+Replace 'status' with other endpoints
+For example, 
+http://35.227.25.29/api/v1/states/ to get all states
+
+http://35.227.25.29/api/v1/states/9799648d-88dc-4e63-b858-32e6531bec5c/cities to get the cities in California
+
+http://35.227.25.29/api/v1/cities/05b0b99c-f10e-4e3a-88d1-b3187d6998ee/places to get all places available for rent tied to San Francisco California
+
+
+
+For local testing:
 1. Open two terminals
 
 2. From terminal1 ran the following command:
@@ -177,7 +188,9 @@ curl -X GET http://0.0.0.0:5000/api/v1/state
 ```
 This will return all the state information in Json format
 
-Other routes:
+
+
+#### Endpoints
 
 Method_Requests | Routes | Description        | Usage Example
 ----------------|--------|-------------|--------------|
